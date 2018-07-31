@@ -1,0 +1,38 @@
+Differences between Porter Stemmer and Lovins Stemmer - 
+
+Lovins Stemmer -
+
+1) Lovins Stemmer performs a lookup on table of 294 endings, 29 conditions and 35 transformation rules. They have been arranged on a longest match principle. 
+2) Lovins Stemmer removes longest suffix from the word. The remaining word is converted to valid word by making adjustment from another lookup table.
+3) It always remove a maximum of one suffix from a word. 
+4) It is a single pass algorithm.
+5) It is very fast but consumes much space.
+6) The drawback is that it is time and data consuming. 
+7) Many suffixes are not available in table, so it highly unreliable.
+
+Examples-
+a) "getting" - get
+    Step1-"getting" - "gett"
+    Step2-"gett"    -  "get"
+	thereby, handles the removal of double leters in words like "getting".
+b) Handles many irregular plurals like 
+   mouse and mice etc.
+
+Porter Stemmer-
+
+1) Porter algorithm is based on the idea that the suffixes in English language are mostly made of a combination of smaller and simpler suffix.
+2) It has five steps. Within each step, rules are applied until one of them passes the condition. If the rule is accepted, the suffix is removed accordingly and the next step is performed and the resultant stem at the end of fifth step is written.
+3) Based on stemming error, Porter Stemmer produces less error rate than Lovins stemmer, but Lovins stemmer produces a better data reduction.
+4) Porter stemmer is basically smaller than Lovins Stemmer because Lovins has very extensive ending lists.
+5) Effectively, Lovins has traded space for time, with its large suffix, it just needs two major steps compared to porter.
+6) Porter stemmer is language independent approach to stemming.
+
+Examples-
+	Rule looks like this -
+		<condition> <suffix> -> <new suffix>
+	a) a rule EED->ED means
+		if the word has atleast one vowel and consonant plus EED ending, change the ending to EE.
+		So.  "agreed" -> "agree"
+		while "feed" remains unchanged.
+
+
