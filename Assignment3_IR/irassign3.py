@@ -192,4 +192,4 @@ while(True):
 	ans=process_query(s)
 	print("\n--------\nThe final document id(s) satisfying the above query are : \n\n\n",ans)
 	
-
+#end
