@@ -44,7 +44,7 @@ def create_posting_list():
 		for elem in uniq_terms:
 			postingdict[elem][i]=t.count(elem)
 	
-
+#mergethispls
 def create_doc_freq():
 	global doc_freq
 	for term in dictionary:
