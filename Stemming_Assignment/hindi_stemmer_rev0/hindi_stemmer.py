@@ -35,6 +35,7 @@ def hi_stem(word):
                     return word[:-L]
     return word
 
+#main_function
 if __name__ == '__main__':
     import sys
     if len(sys.argv) != 1:
