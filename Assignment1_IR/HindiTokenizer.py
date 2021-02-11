@@ -81,6 +81,7 @@ class Tokenizer():
 		self.tokens=tokens
 		#remove words containing spaces
 		self.remove_only_space_words()
+		
 		#remove hyphenated words
 		self.hyphenated_tokens()
 
