@@ -2,7 +2,7 @@ import pickle,sys
 from nltk import PorterStemmer
 from math import sqrt as sqrt
 from collections import defaultdict
-
+#import os
 postingdict = defaultdict(dict)
 
 with open("postingdict.pkl","rb") as f:
