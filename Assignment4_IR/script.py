@@ -5,6 +5,7 @@ from nltk import clean_html
 from nltk import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 
+#define all the stored path present in the folder.
 def store_paths():
 	d={}
 	i=0
