@@ -72,7 +72,6 @@ def booleanAND(l,r):
 			j=j+1
 		else:
 			i=i+1
-	#print(res)
 	return(res)
 				
 def booleanOR(l,r):
@@ -105,7 +104,6 @@ def booleanOR(l,r):
 	return res
 			
 def booleanNOT(r):
-	#print(r)
 	global total
 	l=[]
 	for i in range(total):
