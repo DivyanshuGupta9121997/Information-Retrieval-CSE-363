@@ -26,7 +26,6 @@ def postfix(query):
 	for elem in query:
 		if(elem == '('):
 			stack.append(elem)
-			#print(stack)
 		elif(elem == ')'):
 			op=stack.pop()
 			
