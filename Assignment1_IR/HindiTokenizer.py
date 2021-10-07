@@ -14,7 +14,6 @@ class Tokenizer():
 		self.tokens=[]
 		self.stemmed_word=[]
 		self.final_list=[]
-		#self.final_tokens=[]
 	
 
 	def read_from_file(self,filename):
