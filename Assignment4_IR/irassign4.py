@@ -88,7 +88,6 @@ def cos_similarity(query,docid):
 	for term in query:
 		if term in dictionary:
 			tw=calc_termWeight(term,docid)
-			#idf=calc_IDF(term)
 			ans=ans + (tw)
 	ans=ans/(length_doc[docid])
 	return(ans)
