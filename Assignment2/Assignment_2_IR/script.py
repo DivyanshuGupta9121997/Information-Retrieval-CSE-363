@@ -20,7 +20,6 @@ def store_paths():
 	return d
 
 path_dict=store_paths()
-#print(path_dict)
 n=len(path_dict)
 dictionary=set()
 postingdict = defaultdict(dict)
